@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_image_24">
+        <item name="cornerSize">24dp</item>
+    </style>
+    <style name="style_image_12">
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>

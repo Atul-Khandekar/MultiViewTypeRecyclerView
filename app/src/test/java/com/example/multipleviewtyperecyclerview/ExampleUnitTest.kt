@@ -1,4 +1,4 @@
-package com.example.mutlipleviewtyperecyclerview
+package com.example.multipleviewtyperecyclerview
 
 import org.junit.Test
 

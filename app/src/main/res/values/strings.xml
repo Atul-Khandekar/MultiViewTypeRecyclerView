@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MutlipleViewTypeRecyclerView</string>
+    <string name="i_am_gonna_tweet_my_daily_progress_here">I am gonna tweet my daily progress here</string>
 </resources>

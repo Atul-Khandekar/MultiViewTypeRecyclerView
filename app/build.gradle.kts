@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
-    namespace = "com.example.mutlipleviewtyperecyclerview"
+    namespace = "com.example.multipleviewtyperecyclerview"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mutlipleviewtyperecyclerview"
+        applicationId = "com.example.multipleviewtyperecyclerview"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -33,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -45,4 +49,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+}
+
+
+// Allow references to generated code
+kapt {
+    correctErrorTypes = true
 }
